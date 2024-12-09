@@ -10,11 +10,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-4">
 
           {/* first section */}
-          <div>
-            <h1>
+          <div className="space-y-4 max-w-[300px]">
+            <h1 className="text-2xl font-bold">
               the coding journey
             </h1>
-            <p>
+            <p className="text-dark2">
               A complete log of this run can be found in: C:\\Users\\wi
               nin\\AppData\\Local\\npm-cache\\_logs\\2024-12-09T08_30_42_092Z-debug-0.log
             </p>
