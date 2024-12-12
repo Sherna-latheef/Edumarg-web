@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import HeroPng from "../../assets/hero.png";
+import HeroPng from "../../assets/hero.jpg";
 import Blob from "../../assets/blob.jpg";
 import { motion } from "framer-motion";
 
@@ -41,8 +41,8 @@ const Hero = () => {
               animate="animate"
               className="text-3xl lg:text-5xl font-bold !leading-snug"
             >
-              lets learn to build a <span className="text-secondary">website</span>
-              &nbsp;for your business
+              Ignite Your <span className="text-secondary">Learning</span>
+              &nbsp;Journey with the perfect partner
             </motion.h1>
 
             <motion.div
@@ -68,7 +68,7 @@ const Hero = () => {
           transition={{duration: 0.6, delay: 0.4, ease: "easeInOut"}}
           src={HeroPng}
            alt="Hero"
-            className="w-[200px] xl:w-[400px] relative z-10 drop-shadow" />
+            className="w-[400px] xl:w-[800px] relative z-10 drop-shadow" />
          {/*
           <img
             src={Blob}
