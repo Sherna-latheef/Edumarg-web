@@ -39,10 +39,11 @@ const Hero = () => {
               variants={FadeUp(0.6)}
               initial="initial"
               animate="animate"
-              className="text-3xl lg:text-5xl font-bold !leading-snug"
+              className="text-3xl lg:text-5xl font-bold !leading-snug font-body"
             >
               Ignite Your <span className="text-secondary">Learning</span>
               &nbsp;Journey with the perfect partner
+              <p className="font-body text-sm lg:text-sm">Guiding your minds to begin your educational journey</p>
             </motion.h1>
 
             <motion.div
