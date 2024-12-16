@@ -1,5 +1,5 @@
 import React from "react";
-import BannerPng from "../../assets/banner.png";
+import BannerPng from "../../assets/about.jpg";
 import { LiaAirbnb } from "react-icons/lia";
 import { FadeUp } from "../Hero/Hero"; // Ensure FadeUp is correctly defined
 import { motion } from "framer-motion";
@@ -17,7 +17,7 @@ const Banner = () => {
                     transition={{ duration:0.5, ease: "easeInOut"}}
                         src={BannerPng}
                         alt=""
-                        className="w-[350px] md:max-w-[450px] object-cover drop-shadow"
+                        className="w-[550px] md:max-w-[550px] object-cover drop-shadow"
                     />
                 </div>
                 {/* banner text */}
@@ -29,8 +29,8 @@ const Banner = () => {
                         viewport={{ once: true}}
                         transition={{duration: 0.5}}
                         
-                        className="text-3xl md:text-4xl font-bold !leading-snug">
-                            Edumarg about content the world's leading platform for online learning
+                        className="text-3xl md:text-4xl font-bold font-body !leading-snug ">
+                            About Us
                         </motion.h1>
                         <div className="flex flex-col gap-6">
                             <motion.div
@@ -40,8 +40,13 @@ const Banner = () => {
                                 viewport={{ once: true }}
                                 className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
                             >
-                                <LiaAirbnb className="text-2xl" />
-                                <p className="text-lg">10,000 + courses</p>
+                                
+                                <p className="text-lg font-body text-black">Mission</p>
+                                <p>
+                                We aim to bridge the gap between aspiring students and prestigious universities.
+
+                                </p>
+
                             </motion.div>
 
 
@@ -52,8 +57,11 @@ const Banner = () => {
                                 viewport={{ once: true }}
                                 className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
                             >
-                                <LiaAirbnb className="text-2xl" />
-                                <p className="text-lg">veendum blah blah blah</p>
+                                <p className="text-lg font-body text-black">Vision</p>
+                                <p>
+                                To establish Edumarg as the most-sought after educational consultancy in India to foster a culture of continuous learning and excellence.
+
+                                </p>
                             </motion.div>
 
 
@@ -64,8 +72,11 @@ const Banner = () => {
                                 viewport={{ once: true }}
                                 className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
                             >
-                                <LiaAirbnb className="text-2xl" />
-                                <p className="text-lg">blah blah blah</p>
+                               
+                                <p className="text-lg font-body text-black">Motto</p>
+                                <p>
+
+                                </p>
                             </motion.div>
                         </div>
                     </div>
