@@ -32,20 +32,18 @@ const Banner = () => {
                         className="text-3xl md:text-4xl font-bold font-body !leading-snug ">
                             Empowering Future: Our 
                         </motion.h1>
-                        <div className="flex flex-col gap-6">
+                        <div className="flex flex-col gap-6 ">
                             <motion.div
                                 variants={FadeUp(0.2)} 
                                 initial="initial"
                                 whileInView="animate"
                                 viewport={{ once: true }}
-                                className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
+                                className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-[#219be4] hover:text-[white] duration-300 hover:shadow-2xl"
                             >
                                 
-                                <p className="text-lg font-body text-black">Mission</p>
-                                <p>
-                                We aim to bridge the gap between aspiring students and prestigious universities.
-
-                                </p>
+                                <p className="text-lg font-body text-black hover:text-[white]"><span className="text-xl">Mission:</span> We aim to bridge the gap between
+                                     aspiring students and prestigious universities.</p>
+                                
 
                             </motion.div>
 
@@ -55,29 +53,28 @@ const Banner = () => {
                                 initial="initial"
                                 whileInView="animate"
                                 viewport={{ once: true }}
-                                className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
+                                className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-[#219be4] hover:text-[white]  duration-300 hover:shadow-2xl"
                             >
-                                <p className="text-lg font-body text-black">Vision</p>
-                                <p>
-                                To establish Edumarg as the most-sought after educational consultancy in India to foster a culture of continuous learning and excellence.
-
-                                </p>
+                                
+                                <p className="text-lg font-body text-black hover:text-[white]"><span className="text-xl">Vision:</span> 
+                                To establish Edumarg as the most-sought after educational
+                                 consultancy in India to foster a culture of continuous learning and excellence.</p>
                             </motion.div>
 
-
                             <motion.div
-                                variants={FadeUp(0.6)} 
+                                variants={FadeUp(0.4)} 
                                 initial="initial"
                                 whileInView="animate"
                                 viewport={{ once: true }}
-                                className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
+                                className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-[#219be4] hover:text-[white]  duration-300 hover:shadow-2xl"
                             >
-                               
-                                <p className="text-lg font-body text-black">Motto</p>
-                                <p>
-
-                                </p>
+                                
+                                <p className="text-lg font-body text-black hover:text-[white]"><span className="text-xl">Motto: </span>
+                                To provide personalised services and guidance to students for a hassle-free academic pursuit</p>
                             </motion.div>
+
+
+                            
                         </div>
                     </div>
                 </div>

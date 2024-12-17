@@ -87,7 +87,8 @@ const Services = () => {
                                 initial="initial"
                                 whileInView="animate"
                                 viewport={{ once: true }}
-                                className="bg-[#e7e6d1] rounded-2xl flex flex-col gap-4 items-center justify-center p-4 py-7 hover:bg-white hover:scale-110 duration-300 hover:shadow-2xl"
+                                className="bg-[#635ad9] rounded-2xl flex flex-col gap-4 items-center justify-center p-4 py-7
+                                 hover:bg-[#88f4ff] hover:text-[black] text-[white] hover:scale-110 duration-300 hover:shadow-2xl"
                             >
                                 <div className="text-4xl mb-4">{Service.icon}</div>
                                 <h1 className="text-lg font-semibold text-center px-3 font-body">{Service.title}</h1>

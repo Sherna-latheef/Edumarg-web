@@ -11,17 +11,17 @@ const NavbarMenu = [
   },
   {
     id: 2,
-    title: "Services",
-    link: "#",
+    title: "About Us",
+    path: "#about-us", // Update path to the ID of the About Us section
   },
   {
     id: 3,
-    title: "About Us",
-    link: "#",
+    title: "Services",
+    link: "#services",
   },
   {
     id: 4,
-    title: "Our Team",
+    title: "Enquiry",
     link: "#",
   },
   {
@@ -32,10 +32,8 @@ const NavbarMenu = [
 ];
 
 const Navbar = () => {
-  // State to control whether the mobile menu is open or closed
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Function to toggle the menu visibility
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -45,30 +43,27 @@ const Navbar = () => {
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
-        className="container py-6 flex justify-between items-center"
+        className="container py-12 lg:py-16 flex justify-between items-center"
       >
         {/* Logo section */}
         <div>
           <img
-            src={Logo} 
+            src={Logo}
             alt="Logo"
-            className="h-20, w-20"
+            className="h-32 w-auto"
           />
         </div>
 
         {/* Desktop Menu section */}
         <div className="hidden lg:block">
-          <ul className="flex items-center gap-3">
+          <ul className="flex items-center gap-6 text-lg">
             {NavbarMenu.map((menu) => (
               <li key={menu.id}>
                 <a
                   href={menu.path}
-                  className="inline-block py-2 px-3 hover:text-secondary relative group"
+                  className="inline-block py-3 px-4 hover:text-secondary relative group font-body"
                 >
-                  <div
-                    className=" bg-secondary absolute mt-2
-                           bottom-0 group-hover:block hidden"
-                  ></div>
+                  <div className="bg-secondary absolute mt-2 bottom-0 group-hover:block hidden"></div>
                   {menu.title}
                 </a>
               </li>
@@ -80,7 +75,7 @@ const Navbar = () => {
         <div className="lg:hidden">
           <IoMdMenu
             className="text-4xl cursor-pointer"
-            onClick={toggleMenu} // Toggle menu when clicked
+            onClick={toggleMenu}
           />
         </div>
       </motion.div>
@@ -91,22 +86,20 @@ const Navbar = () => {
           isMenuOpen ? "transform translate-x-0" : "transform translate-x-full"
         }`}
       >
-        {/* Close Button (Cross) */}
         <div className="absolute top-4 left-4">
           <IoMdClose
             className="text-lg cursor-pointer"
-            onClick={toggleMenu} // Close the menu when clicked
+            onClick={toggleMenu}
           />
         </div>
 
-        {/* Menu Items (Horizontal Layout) */}
         <ul className="flex items-center justify-around py-8 space-x-6">
           {NavbarMenu.map((menu) => (
             <li key={menu.id}>
               <a
                 href={menu.path}
                 className="text-sm font-semibold hover:text-secondary"
-                onClick={toggleMenu} // Close the menu when a link is clicked
+                onClick={toggleMenu}
               >
                 {menu.title}
               </a>

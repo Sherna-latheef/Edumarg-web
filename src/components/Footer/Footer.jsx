@@ -1,114 +1,102 @@
 import React from "react";
 import { FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
-import { TbWorldWww } from "react-icons/tb";
 import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="py-28 bg-[#f7f7f7]">
-      <motion.div 
-      initial={{ opacity: 0, y:50 }}
-      whileInView={{ opacity: 1, y: 0}}
-      
-      className="container">
+    <footer className="py-28 bg-[#e1dada]">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        className="container"
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-4">
 
           {/* first section */}
           <div className="space-y-4 max-w-[300px]">
-            <h1 className="text-2xl font-bold">
-              the coding journey
+            <h1 className="text-2xl font-bold font-body">
+              EduMarg
             </h1>
-            <p className="text-dark2">
-              A complete log of this run can be found in: C:\\Users\\wi
-              nin\\AppData\\Local\\npm-cache\\_logs\\2024-12-09T08_30_42_092Z-debug-0.log
+            <p className="text-black font-body text-xl">
+              Corporate office<br />
+              Edu Marg
+              53/3942<br />
+              Asher building
+              2nd Floor<br />
+              Ponnurunni, Vyttila<br />
+              Kochi, 682019
             </p>
           </div>
 
           {/* second section */}
           <div className="grid grid-cols-2 gap-10">
             <div className="space-y-4">
-              <h1 className="text-2xl font-bold">
-                Courses
+              <h1 className="text-2xl font-bold font-body">
+                Lets Chat!
               </h1>
-              <div className="text-dark2">
-                <ul className="space-y-2 text-lg">
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                      Web Devolopment
+              <div className="text-black">
+                <ul className="space-y-2 text-lg font-body">
+                  <li className="cursor-pointer hover:text-[#7338ac] duration-200">
+                    Contact number: <br /> 9207115870
                   </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                       Devolopment
-                  </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                      Web Devolopment
-                  </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                       Devolopment
-                  </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                       Devolopment
+                  <li className="cursor-pointer hover:text-[#7338ac] duration-200">
+                    E-mail: <br/> edumarg@gmail.com
                   </li>
                 </ul>
               </div>
-
             </div>
             <div>
-            <div className="space-y-4">
-              <h1 className="text-2xl font-bold">
-                Links
-              </h1>
-              <div className="text-dark2">
-                <ul className="space-y-2 text-lg">
-                  <li className="cursor-pointer hover:text-secondary duration-200">
+              <div className="space-y-4">
+                <h1 className="text-2xl font-bold font-body">
+                  Links
+                </h1>
+                <div className="text-black">
+                  <ul className="space-y-2 text-lg">
+                    <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
                       Home
-                  </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                       Services
-                  </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                      contact
-                  </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                       others
-                  </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                       others
-                  </li>
-                </ul>
+                    </li>
+                    <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
+                      About
+                    </li>
+                    <li className="cursor-pointer hover:text-[#7338ac]duration-200 font-body">
+                      services
+                    </li>
+                    <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
+                      Contact
+                    </li>
+                  </ul>
+                </div>
               </div>
-
-            </div>
-
             </div>
           </div>
+
           {/* third section */}
           <div className="space-y-4 max-w-[300px]">
-            <h1>
+            <h1 className="font-body text-xl font-bold">
               Get in Touch
             </h1>
             <div className="flex items-center">
-              <input type="text" placeholder="Enter your email" className="p-3 rounded-s-xl bg-white w-full
-              py-4 focus:ring-0 focus:outline-none placeholder:text-dark2" />
+              <input
+                type="text"
+                placeholder="Enter your email"
+                className="p-3 rounded-s-xl bg-white w-full py-4 focus:ring-0 focus:outline-1 placeholder:text-black "
+              />
               <button className="bg-primary text-white font-semibold py-4 px-6 rounded-e-xl">
                 go
-
               </button>
             </div>
 
             {/* social icons*/}
-            <div className="flex space-x-6 py-3 ">
+            <div className="flex space-x-6 py-3">
               <a href="#">
-                <FaWhatsapp className="cursor-pointer
-                hover: text-primary hover:scale-105 duration-200" />
+                <FaWhatsapp className="cursor-pointer hover:text-[#7338ac] hover:scale-105 duration-200 text-2xl" />
               </a>
               <a href="#">
-                <FaYoutube className="cursor-pointer
-                hover: text-primary hover:scale-105 duration-200" />
+                <FaYoutube className="cursor-pointer hover:text-[#7338ac] hover:scale-105 duration-200 text-2xl" />
               </a>
               <a href="#">
-                <FaInstagram className="cursor-pointer
-                hover: text-primary hover:scale-105 duration-200" />
+                <FaInstagram className="cursor-pointer hover:text-[#7338ac] hover:scale-105 duration-200 text-2xl" />
               </a>
-
             </div>
           </div>
         </div>

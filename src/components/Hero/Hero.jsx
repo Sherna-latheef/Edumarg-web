@@ -43,7 +43,10 @@ const Hero = () => {
             >
               Ignite Your <span className="text-secondary">Learning</span>
               &nbsp;Journey with the perfect partner
-              <p className="font-body text-sm lg:text-sm">Guiding your minds to begin your educational journey</p>
+              <p className="font-body text-lg lg:text-lg whitespace-nowrap">
+                Guiding your minds to begin your educational journey
+              </p>
+
             </motion.h1>
 
             <motion.div
@@ -64,13 +67,13 @@ const Hero = () => {
         <div className="flex justify-center items-center relative">
 
           <motion.img
-          initial={{x: 50, opacity: 0 }}
-          animate={{x: 0, opacity:1}}
-          transition={{duration: 0.6, delay: 0.4, ease: "easeInOut"}}
-          src={HeroPng}
-           alt="Hero"
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
+            src={HeroPng}
+            alt="Hero"
             className="w-[400px] xl:w-[800px] relative z-10 drop-shadow" />
-         {/*
+          {/*
           <img
             src={Blob}
             alt="Blob"
