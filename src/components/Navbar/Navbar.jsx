@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { motion } from "framer-motion";
 import Logo from "../../assets/logo.png";
+import { path } from "framer-motion/client";
 
 const NavbarMenu = [
   {
@@ -17,17 +18,17 @@ const NavbarMenu = [
   {
     id: 3,
     title: "Services",
-    link: "#services",
+    path: "#services",
   },
   {
     id: 4,
     title: "Enquiry",
-    link: "#",
+    path: "#enquiry",
   },
   {
     id: 5,
     title: "Contact Us",
-    link: "#",
+    path: "#footer",
   },
 ];
 
@@ -43,7 +44,7 @@ const Navbar = () => {
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
-        className="container py-12 lg:py-16 flex justify-between items-center"
+        className="container py-6 lg:py-12 flex justify-between items-center"
       >
         {/* Logo section */}
         <div>
@@ -93,7 +94,7 @@ const Navbar = () => {
           />
         </div>
 
-        <ul className="flex items-center justify-around py-8 space-x-6">
+        <ul className="flex items-center justify-around py-4 space-x-6">
           {NavbarMenu.map((menu) => (
             <li key={menu.id}>
               <a

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="py-28 bg-[#e1dada]">
+    <footer id="footer" className="py-28 bg-[#e1dada]">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ const Footer = () => {
                     Contact number: <br /> 9207115870
                   </li>
                   <li className="cursor-pointer hover:text-[#7338ac] duration-200">
-                    E-mail: <br/> edumarg@gmail.com
+                    E-mail: <br /> edumarg@gmail.com
                   </li>
                 </ul>
               </div>
@@ -53,16 +53,17 @@ const Footer = () => {
                 <div className="text-black">
                   <ul className="space-y-2 text-lg">
                     <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
-                      Home
+                    <a href="#hero">Home</a>
                     </li>
                     <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
-                      About
-                    </li>
-                    <li className="cursor-pointer hover:text-[#7338ac]duration-200 font-body">
-                      services
+                    <a href="#about-us">About</a>
                     </li>
                     <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
-                      Contact
+                      <a href="#services">Services</a>
+                    </li>
+
+                    <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
+                    <a href="#footer">Contacts</a>
                     </li>
                   </ul>
                 </div>
