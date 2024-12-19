@@ -40,7 +40,7 @@ const Footer = () => {
                     Contact number: <br /> 9207115870
                   </li>
                   <li className="cursor-pointer hover:text-[#7338ac] duration-200">
-                    E-mail: <br /> edumarg@gmail.com
+                    E-mail: <br /> EduMarg2024@gmail.com
                   </li>
                 </ul>
               </div>

@@ -38,10 +38,10 @@ const Banner = () => {
                                 initial="initial"
                                 whileInView="animate"
                                 viewport={{ once: true }}
-                                className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-[#219be4] hover:text-[white] duration-300 hover:shadow-2xl"
+                                className="flex items-center gap-4 p-6 bg-[#635ad9] rounded-2xl hover:bg-[#219be4] text-[white] duration-300 hover:shadow-2xl"
                             >
                                 
-                                <p className="text-lg font-body text-black hover:text-[white]"><span className="text-xl">Mission:</span> We aim to bridge the gap between
+                                <p className="text-lg font-body text-white "><span className="text-xl">Mission:</span> We aim to bridge the gap between
                                      aspiring students and prestigious universities.</p>
                                 
 
@@ -53,10 +53,10 @@ const Banner = () => {
                                 initial="initial"
                                 whileInView="animate"
                                 viewport={{ once: true }}
-                                className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-[#219be4] hover:text-[white]  duration-300 hover:shadow-2xl"
+                                className="flex items-center gap-4 p-6 bg-[#635ad9] rounded-2xl hover:bg-[#219be4] hover:text-[white]  duration-300 hover:shadow-2xl"
                             >
                                 
-                                <p className="text-lg font-body text-black hover:text-[white]"><span className="text-xl">Vision:</span> 
+                                <p className="text-lg font-body text-white"><span className="text-xl">Vision:</span> 
                                 To establish Edumarg as the most-sought after educational
                                  consultancy in India to foster a culture of continuous learning and excellence.</p>
                             </motion.div>
@@ -66,10 +66,10 @@ const Banner = () => {
                                 initial="initial"
                                 whileInView="animate"
                                 viewport={{ once: true }}
-                                className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-[#219be4] hover:text-[white]  duration-300 hover:shadow-2xl"
+                                className="flex items-center gap-4 p-6 bg-[#635ad9] rounded-2xl hover:bg-[#219be4] hover:text-[white]  duration-300 hover:shadow-2xl"
                             >
                                 
-                                <p className="text-lg font-body text-black hover:text-[white]"><span className="text-xl">Motto: </span>
+                                <p className="text-lg font-body text-white"><span className="text-xl">Motto: </span>
                                 To provide personalised services and guidance to students for a hassle-free academic pursuit</p>
                             </motion.div>
 

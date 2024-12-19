@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { motion } from "framer-motion";
 import Logo from "../../assets/logo.png";
-import { path } from "framer-motion/client";
 
 const NavbarMenu = [
   {
@@ -59,14 +58,22 @@ const Navbar = () => {
         <div className="hidden lg:block">
           <ul className="flex items-center gap-6 text-lg">
             {NavbarMenu.map((menu) => (
-              <li key={menu.id}>
+              <li key={menu.id} className="relative group">
                 <a
                   href={menu.path}
-                  className="inline-block py-3 px-4 hover:text-secondary relative group font-body"
+                  className="inline-block py-3 px-4 hover:text-[#635ad9] relative group font-body"
                 >
                   <div className="bg-secondary absolute mt-2 bottom-0 group-hover:block hidden"></div>
                   {menu.title}
                 </a>
+
+                {/* Bulging effect on hover */}
+                <style jsx>{`
+                  .group:hover a {
+                    transform: scale(1.3); /* Make the text grow */
+                    transition: transform 0.2s ease-in-out; /* Smooth transition */
+                  }
+                `}</style>
               </li>
             ))}
           </ul>
@@ -83,9 +90,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Section */}
       <div
-        className={`lg:hidden absolute top-0 right-0 w-[100%] bg-white text-black transition-transform duration-300 ease-in-out ${
-          isMenuOpen ? "transform translate-x-0" : "transform translate-x-full"
-        }`}
+        className={`lg:hidden absolute top-0 right-0 w-[100%] bg-white text-black transition-transform duration-300 ease-in-out ${isMenuOpen ? "transform translate-x-0" : "transform translate-x-full"}`}
       >
         <div className="absolute top-4 left-4">
           <IoMdClose
